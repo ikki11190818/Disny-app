@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ディズニーキャラ識別アプリ</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body class="background_image_true">
+    <header>   
+        <a class="header-logo" href="/">ディズニーキャラクター識別アプリ</a>
+    </header>
+
+    <main>
+        <div class="file_submit">  
+            <h2>アップロードされた動画からディズニーキャラクターを識別します。</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input class="file_choose" type="file" name="file">
+                <input class="btn" value="アップロード" type="submit">
+            </form>
+            <h2>識別可能なキャラクター</h2>
+            <img src="static\bg_img\Micky.jpg" alt="">
+            <img src="static\bg_img\Minni.jpg" alt="">
+            <img src="static\bg_img\Donald.jpg" alt="">
+            <img src="static\bg_img\Daisy.jpg" alt="">
+            <img src="static\bg_img\Goofy.jpg" alt="">
+            <img src="static\bg_img\Pluto.jpg" alt="">
+            <img src="static\bg_img\Chip.jpg" alt="">
+            <img src="static\bg_img\Dale.jpg" alt="">
+            
+            <h2>{{textmassage}}</h2>
+            <div class="result_video">
+                <video src={{video_path}} loop autoplay muted></video>
+            </div> 
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>
+            参考文献一覧
+        </h3> 
+        <ul>
+            <li>
+                <a class="ref_url" href='https://sleepless-se.net/2019/06/21/how-to-train-keras%e2%88%92yolo3/'>
+                    【物体検出】keras−yolo3の学習方法
+                </a>
+            </li>
+            <li>
+                <a class="ref_url" href='https://qiita.com/yottyann1221/items/20a9c8a7a02edc7cd3d1'>
+                    【物体検出】アノテーションツールVoTTの使い方
+                </a>
+            </li>
+        </ul>
+        <h3>
+            サンプル動画
+        </h3>
+        <li>
+            <a class="ref_url" href='https://www.youtube.com/watch?v=HJBVhQZL2uQ&t=268s'>
+                【東京ディズニーランド開園35周年・新パレード】ドリーミング・アップ！
+            </a>
+        </li>
+    </footer>
+</body>
+</html>
